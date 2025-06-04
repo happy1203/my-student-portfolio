@@ -9,7 +9,7 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
-  link?: string;
+  links: { label: string; url: string }[];
   details: string;
 }
 
@@ -19,36 +19,69 @@ const ProjectsSection = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Mobile App",
-      description: "Led product strategy for a mobile-first shopping experience with 40% increase in conversion rates.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
-      tags: ["Mobile", "UX Strategy", "Analytics"],
-      link: "https://example.com",
-      details: "Spearheaded the development of a mobile e-commerce platform focusing on user experience optimization. Conducted extensive user research, A/B testing, and data analysis to identify pain points in the customer journey. Implemented a streamlined checkout process that reduced cart abandonment by 35% and increased mobile conversion rates by 40%. Collaborated with cross-functional teams including design, engineering, and marketing to deliver a product that exceeded KPI targets."
+      title: "UW Blueprint - Oakville and Milton Humane Society",
+      description: "Spearheaded team of 8 developers and 4 designers to develop a volunteer and pet management system for OMHS.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
+      tags: ["Product Management", "Figma", "Mobile Design"],
+      links: [
+        { label: "View Figma Designs", url: "#" }
+      ],
+      details: "Led end-to-end delivery of mobile and tablet designs in Figma, achieving 100% of roadmap milestones in 8 months. Defined PRDs for all features, incorporating client input and technical feasibility to reduce developer rework by 80%. Managed cross-functional team to deliver a comprehensive volunteer and pet management system."
     },
     {
       id: 2,
-      title: "SaaS Dashboard Redesign",
-      description: "Reimagined analytics dashboard resulting in 60% improvement in user engagement metrics.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      tags: ["SaaS", "Data Visualization", "B2B"],
-      details: "Led a comprehensive redesign of a B2B analytics dashboard used by over 10,000 daily active users. Conducted stakeholder interviews, user journey mapping, and competitive analysis to identify opportunities for improvement. Prioritized features based on user feedback and business impact, resulting in a 60% increase in user engagement and 25% reduction in support tickets. Implemented progressive disclosure principles and improved information architecture to enhance usability."
+      title: "TripTok",
+      description: "Designing mobile app in Figma to organize saved TikTok content for easy reference and sharing, focused on traveling.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
+      tags: ["Product Design", "Mobile App", "Figma"],
+      links: [],
+      details: "Currently developing a mobile application that helps users organize and reference their saved TikTok content specifically for travel planning. The app focuses on creating an intuitive user experience for content curation and sharing among travel enthusiasts."
     },
     {
       id: 3,
-      title: "AI-Powered Recommendation Engine",
-      description: "Launched ML-driven product recommendations increasing revenue per user by 25%.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop",
-      tags: ["AI/ML", "Personalization", "Growth"],
-      details: "Managed the end-to-end development of an AI-powered recommendation system that personalizes content for users based on their behavior patterns. Worked closely with data science teams to define algorithms and success metrics. Conducted extensive A/B testing to optimize recommendation accuracy and implemented feedback loops for continuous improvement. The feature resulted in a 25% increase in revenue per user and 45% improvement in session duration."
+      title: "City-View",
+      description: "Developed full-stack app with React, Node.js, and MySQL to help users discover and plan new travel destinations.",
+      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=500&h=300&fit=crop",
+      tags: ["Full-Stack", "React", "Node.js", "MySQL"],
+      links: [
+        { label: "View Presentation", url: "https://docs.google.com/presentation/d/16TUWWjzO2dEHUmCQKQAespMlKH_rXQQPzgtv2K9c6DQ/edit?usp=sharing" },
+        { label: "GitHub Repository", url: "#" }
+      ],
+      details: "Built a comprehensive travel planning platform using modern web technologies. The application helps users discover new destinations and plan their trips with an intuitive interface. Implemented full-stack architecture with React frontend, Node.js backend, and MySQL database for optimal performance and user experience."
     },
     {
       id: 4,
-      title: "Cross-Platform Integration",
-      description: "Orchestrated seamless integration across web, mobile, and desktop platforms.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      tags: ["Integration", "API Design", "Platform Strategy"],
-      details: "Led a complex integration project to unify user experiences across web, mobile, and desktop platforms. Defined API specifications and data synchronization strategies while ensuring consistent functionality across all touchpoints. Managed technical dependencies and coordinated with multiple engineering teams to deliver on tight deadlines. The integration improved user retention by 30% and reduced development time for new features by 50%."
+      title: "ICE Competition - Blendtek Inc",
+      description: "Developed innovative solution for Blendtek Inc as part of the Innovation, Creativity & Entrepreneurship competition.",
+      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=500&h=300&fit=crop",
+      tags: ["Innovation", "Entrepreneurship", "Strategy"],
+      links: [
+        { label: "View Presentation", url: "https://docs.google.com/presentation/d/1JtHoFsQQbyjdWb1gvoxuMIbSslqTggfSU5zYBjlLsVI/edit?usp=sharing" }
+      ],
+      details: "Participated in the Innovation, Creativity & Entrepreneurship competition, developing a comprehensive solution for Blendtek Inc. The project involved analyzing market opportunities, developing innovative strategies, and presenting actionable recommendations to industry professionals."
+    },
+    {
+      id: 5,
+      title: "World of Opportunities Conference - People's Choice Award Winner",
+      description: "Won People's Choice Award at the World of Opportunities Conference for innovative project presentation.",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=300&fit=crop",
+      tags: ["Award Winner", "Conference", "Innovation"],
+      links: [
+        { label: "View Report", url: "#" },
+        { label: "View Poster Board", url: "#" }
+      ],
+      details: "Led a team to victory at the World of Opportunities Conference, earning the prestigious People's Choice Award. The project showcased innovative thinking and practical solutions that resonated with both judges and audience members. Demonstrated strong presentation skills and collaborative leadership."
+    },
+    {
+      id: 6,
+      title: "Peloton Case Competition - First Place",
+      description: "Developed winning go-to-market strategy for Peloton bikes, securing first place in class competition.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
+      tags: ["Go-to-Market", "Strategy", "Consulting"],
+      links: [
+        { label: "View Presentation", url: "https://docs.google.com/presentation/d/16OYOaRAg8thz18kFe4hMrEhiOWyHEtnk9bgTC07V65A/edit?usp=sharing" }
+      ],
+      details: "Led team to first place in a competitive case study focused on Peloton bikes. Developed comprehensive go-to-market strategy, conducted market analysis, and presented strategic recommendations. Demonstrated expertise in business strategy, market research, and consulting methodologies."
     }
   ];
 
@@ -60,12 +93,12 @@ const ProjectsSection = () => {
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A selection of product management projects showcasing strategic thinking, 
-            user-centered design, and measurable business impact.
+            A showcase of my work in product management, development, and strategic consulting 
+            across various industries and technologies.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

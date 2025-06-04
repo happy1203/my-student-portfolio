@@ -15,19 +15,19 @@ const Hero = () => {
         <div className="space-y-8 animate-fade-in">
           <div className="relative mx-auto w-48 h-48 lg:w-56 lg:h-56">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-              alt="Profile"
+              src="/placeholder.svg"
+              alt="Happy Patel Profile"
               className="w-full h-full object-cover rounded-full shadow-xl ring-2 ring-white"
             />
           </div>
           
           <div className="space-y-4">
             <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-              Hi, I'm Happy
+              Hey! My name is Happy Patel
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl mx-auto">
-              Student & aspiring professional crafting digital solutions
+              Product Manager building innovative solutions across tech & consulting
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Hero = () => {
               <GraduationCap className="h-8 w-8 text-blue-600 mx-auto" />
               <h3 className="font-semibold text-gray-900">Education</h3>
               <p className="text-sm text-gray-600">
-                BCS & BBA across two universities
+                BCS at University of Waterloo & BBA at Wilfrid Laurier University
               </p>
             </CardContent>
           </Card>
@@ -47,9 +47,9 @@ const Hero = () => {
           <Card className="border-0 shadow-lg bg-gradient-to-br from-purple-50 to-purple-100">
             <CardContent className="p-6 text-center space-y-3">
               <Briefcase className="h-8 w-8 text-purple-600 mx-auto" />
-              <h3 className="font-semibold text-gray-900">Recent Work</h3>
+              <h3 className="font-semibold text-gray-900">Recent Experience</h3>
               <p className="text-sm text-gray-600">
-                Building innovative digital experiences
+                Product Manager Intern at Interac Corporation
               </p>
             </CardContent>
           </Card>

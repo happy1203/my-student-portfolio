@@ -2,7 +2,7 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, X } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Project } from "@/components/ProjectsSection";
 
 interface ProjectModalProps {
@@ -53,14 +53,23 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             <p className="text-gray-700 leading-relaxed">{project.details}</p>
           </div>
           
-          {project.link && (
-            <div className="flex justify-start">
-              <Button asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Project
-                </a>
-              </Button>
+          {project.links.length > 0 && (
+            <div className="space-y-3">
+              <h4 className="text-lg font-semibold text-gray-900">Links</h4>
+              <div className="flex flex-wrap gap-3">
+                {project.links.map((link, index) => (
+                  <Button 
+                    key={index}
+                    asChild 
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  >
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      {link.label}
+                    </a>
+                  </Button>
+                ))}
+              </div>
             </div>
           )}
         </div>
