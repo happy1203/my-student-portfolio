@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-12">
         {/* Profile Section */}
         <div className="space-y-8 animate-fade-in">
-          <div className="relative mx-auto w-32 h-32 lg:w-40 lg:h-40">
+          <div className="relative mx-auto w-48 h-48 lg:w-56 lg:h-56">
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
               alt="Profile"
