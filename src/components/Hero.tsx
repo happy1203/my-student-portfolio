@@ -72,7 +72,7 @@ const Hero = () => {
             size="lg" 
             className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
           >
-            <a href="happy1203/my-student-portfolio/public/lovable-uploads/Happy Patel Resume (3).pdf" target="_blank" rel="noopener noreferrer">
+            <a href="public/lovable-uploads/Happy Patel Resume (3).pdf" target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-4 w-4" />
               View Resume
             </a>
