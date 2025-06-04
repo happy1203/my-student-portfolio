@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowDown, GraduationCap, Briefcase } from "lucide-react";
+import { ArrowDown, GraduationCap, Briefcase, FileText } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -13,9 +13,9 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-12">
         {/* Profile Section */}
         <div className="space-y-8 animate-fade-in">
-          <div className="relative mx-auto w-48 h-48 lg:w-56 lg:h-56">
+          <div className="relative mx-auto w-64 h-64 lg:w-72 lg:h-72">
             <img
-              src="/placeholder.svg"
+              src="/lovable-uploads/e4b2fa6a-595d-4d81-82da-71020fdadd32.png"
               alt="Happy Patel Profile"
               className="w-full h-full object-cover rounded-full shadow-xl ring-2 ring-white"
             />
@@ -55,8 +55,8 @@ const Hero = () => {
           </Card>
         </div>
         
-        {/* CTA Button */}
-        <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Button 
             onClick={scrollToProjects}
             size="lg" 
@@ -64,6 +64,18 @@ const Hero = () => {
           >
             View My Projects
             <ArrowDown className="ml-2 h-4 w-4" />
+          </Button>
+          
+          <Button 
+            asChild
+            variant="outline"
+            size="lg" 
+            className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+          >
+            <a href="/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png" target="_blank" rel="noopener noreferrer">
+              <FileText className="mr-2 h-4 w-4" />
+              View Resume
+            </a>
           </Button>
         </div>
       </div>

@@ -14,15 +14,6 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
       className="group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-gradient-to-br from-white to-gray-50 h-full"
       onClick={onClick}
     >
-      <div className="relative overflow-hidden">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      </div>
-      
       <CardContent className="p-6 flex flex-col h-full">
         <div className="space-y-4 flex-grow">
           <div className="flex flex-wrap gap-2">

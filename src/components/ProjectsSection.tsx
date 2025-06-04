@@ -24,7 +24,7 @@ const ProjectsSection = () => {
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
       tags: ["Product Management", "Figma", "Mobile Design"],
       links: [
-        { label: "View Figma Designs", url: "#" }
+        { label: "View Figma Designs", url: "https://www.figma.com/design/Z04gFPGFCo41q4pqMQdqp1/Platform-Design?node-id=429-764&p=f" }
       ],
       details: "Led end-to-end delivery of mobile and tablet designs in Figma, achieving 100% of roadmap milestones in 8 months. Defined PRDs for all features, incorporating client input and technical feasibility to reduce developer rework by 80%. Managed cross-functional team to deliver a comprehensive volunteer and pet management system."
     },
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       tags: ["Full-Stack", "React", "Node.js", "MySQL"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/16TUWWjzO2dEHUmCQKQAespMlKH_rXQQPzgtv2K9c6DQ/edit?usp=sharing" },
-        { label: "GitHub Repository", url: "#" }
+        { label: "GitHub Repository", url: "https://github.com/happy1203/city-seeker" }
       ],
       details: "Built a comprehensive travel planning platform using modern web technologies. The application helps users discover new destinations and plan their trips with an intuitive interface. Implemented full-stack architecture with React frontend, Node.js backend, and MySQL database for optimal performance and user experience."
     },
@@ -53,10 +53,11 @@ const ProjectsSection = () => {
       id: 4,
       title: "ICE Competition - Blendtek Inc",
       description: "Developed innovative solution for Blendtek Inc as part of the Innovation, Creativity & Entrepreneurship competition.",
-      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/a9eb7422-541e-42d0-8daa-31c5d06af9d5.png",
       tags: ["Innovation", "Entrepreneurship", "Strategy"],
       links: [
-        { label: "View Presentation", url: "https://docs.google.com/presentation/d/1JtHoFsQQbyjdWb1gvoxuMIbSslqTggfSU5zYBjlLsVI/edit?usp=sharing" }
+        { label: "View Presentation", url: "https://docs.google.com/presentation/d/1JtHoFsQQbyjdWb1gvoxuMIbSslqTggfSU5zYBjlLsVI/edit?usp=sharing" },
+        { label: "Blendtek Website", url: "https://www.blendtek.com/" }
       ],
       details: "Participated in the Innovation, Creativity & Entrepreneurship competition, developing a comprehensive solution for Blendtek Inc. The project involved analyzing market opportunities, developing innovative strategies, and presenting actionable recommendations to industry professionals."
     },
@@ -64,7 +65,7 @@ const ProjectsSection = () => {
       id: 5,
       title: "World of Opportunities Conference - People's Choice Award Winner",
       description: "Won People's Choice Award at the World of Opportunities Conference for innovative project presentation.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png",
       tags: ["Award Winner", "Conference", "Innovation"],
       links: [
         { label: "View Report", url: "#" },
@@ -76,10 +77,11 @@ const ProjectsSection = () => {
       id: 6,
       title: "Peloton Case Competition - First Place",
       description: "Developed winning go-to-market strategy for Peloton bikes, securing first place in class competition.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
       tags: ["Go-to-Market", "Strategy", "Consulting"],
       links: [
-        { label: "View Presentation", url: "https://docs.google.com/presentation/d/16OYOaRAg8thz18kFe4hMrEhiOWyHEtnk9bgTC07V65A/edit?usp=sharing" }
+        { label: "View Presentation", url: "https://docs.google.com/presentation/d/16OYOaRAg8thz18kFe4hMrEhiOWyHEtnk9bgTC07V65A/edit?usp=sharing" },
+        { label: "Peloton Website", url: "https://www.onepeloton.com/en-CA" }
       ],
       details: "Led team to first place in a competitive case study focused on Peloton bikes. Developed comprehensive go-to-market strategy, conducted market analysis, and presented strategic recommendations. Demonstrated expertise in business strategy, market research, and consulting methodologies."
     }
