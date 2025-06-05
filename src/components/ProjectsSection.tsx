@@ -21,10 +21,11 @@ const ProjectsSection = () => {
       id: 1,
       title: "UW Blueprint - Oakville and Milton Humane Society",
       description: "Spearheaded team of 8 developers and 4 designers to develop a volunteer and pet management system for OMHS.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/13012312-d5d0-4780-b023-35f07961c4d8.png",
       tags: ["Product Management", "Figma", "Mobile Design"],
       links: [
-        { label: "View Figma Designs", url: "https://www.figma.com/design/Z04gFPGFCo41q4pqMQdqp1/Platform-Design?node-id=429-764&p=f" }
+        { label: "View Figma Designs", url: "https://www.figma.com/design/Z04gFPGFCo41q4pqMQdqp1/Platform-Design?node-id=429-764&p=f" },
+        { label: "OMHS Website", url: "https://omhs.ca/" }
       ],
       details: "Led end-to-end delivery of mobile and tablet designs in Figma, achieving 100% of roadmap milestones in 8 months. Defined PRDs for all features, incorporating client input and technical feasibility to reduce developer rework by 80%. Managed cross-functional team to deliver a comprehensive volunteer and pet management system."
     },
@@ -53,7 +54,7 @@ const ProjectsSection = () => {
       id: 4,
       title: "ICE Competition - Blendtek Inc",
       description: "Developed innovative solution for Blendtek Inc as part of the Innovation, Creativity & Entrepreneurship competition.",
-      image: "/lovable-uploads/a9eb7422-541e-42d0-8daa-31c5d06af9d5.png",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
       tags: ["Innovation", "Entrepreneurship", "Strategy"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/1JtHoFsQQbyjdWb1gvoxuMIbSslqTggfSU5zYBjlLsVI/edit?usp=sharing" },
@@ -65,7 +66,7 @@ const ProjectsSection = () => {
       id: 5,
       title: "World of Opportunities Conference - People's Choice Award Winner",
       description: "Won People's Choice Award at the World of Opportunities Conference for innovative project presentation.",
-      image: "/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png",
+      image: "/lovable-uploads/a9eb7422-541e-42d0-8daa-31c5d06af9d5.png",
       tags: ["Award Winner", "Conference", "Innovation"],
       links: [
         { label: "View Report", url: "#" },
