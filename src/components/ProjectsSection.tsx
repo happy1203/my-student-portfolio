@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectModal from "@/components/ProjectModal";
@@ -31,12 +30,15 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "TripTok",
-      description: "Designing mobile app in Figma to organize saved TikTok content for easy reference and sharing, focused on traveling.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      tags: ["Product Design", "Mobile App", "Figma"],
-      links: [],
-      details: "Currently developing a mobile application that helps users organize and reference their saved TikTok content specifically for travel planning. The app focuses on creating an intuitive user experience for content curation and sharing among travel enthusiasts."
+      title: "World of Opportunities Conference - People's Choice Award Winner",
+      description: "Won People's Choice Award at the World of Opportunities Conference for innovative project presentation.",
+      image: "/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png",
+      tags: ["Award Winner", "Conference", "Innovation"],
+      links: [
+        { label: "View Report", url: "#" },
+        { label: "View Poster Board", url: "/lovable-uploads/d3e8e273-c5b4-4fa7-8711-d43046b02ee3.png" }
+      ],
+      details: "Led a team to victory at the World of Opportunities Conference, earning the prestigious People's Choice Award. The project showcased innovative thinking and practical solutions that resonated with both judges and audience members. Demonstrated strong presentation skills and collaborative leadership."
     },
     {
       id: 3,
@@ -64,18 +66,6 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: "World of Opportunities Conference - People's Choice Award Winner",
-      description: "Won People's Choice Award at the World of Opportunities Conference for innovative project presentation.",
-      image: "/lovable-uploads/a9eb7422-541e-42d0-8daa-31c5d06af9d5.png",
-      tags: ["Award Winner", "Conference", "Innovation"],
-      links: [
-        { label: "View Report", url: "#" },
-        { label: "View Poster Board", url: "#" }
-      ],
-      details: "Led a team to victory at the World of Opportunities Conference, earning the prestigious People's Choice Award. The project showcased innovative thinking and practical solutions that resonated with both judges and audience members. Demonstrated strong presentation skills and collaborative leadership."
-    },
-    {
-      id: 6,
       title: "Peloton Case Competition - First Place",
       description: "Developed winning go-to-market strategy for Peloton bikes, securing first place in class competition.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
@@ -85,6 +75,15 @@ const ProjectsSection = () => {
         { label: "Peloton Website", url: "https://www.onepeloton.com/en-CA" }
       ],
       details: "Led team to first place in a competitive case study focused on Peloton bikes. Developed comprehensive go-to-market strategy, conducted market analysis, and presented strategic recommendations. Demonstrated expertise in business strategy, market research, and consulting methodologies."
+    },
+    {
+      id: 6,
+      title: "TripTok",
+      description: "Designing mobile app in Figma to organize saved TikTok content for easy reference and sharing, focused on traveling.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
+      tags: ["Product Design", "Mobile App", "Figma"],
+      links: [],
+      details: "Currently developing a mobile application that helps users organize and reference their saved TikTok content specifically for travel planning. The app focuses on creating an intuitive user experience for content curation and sharing among travel enthusiasts."
     }
   ];
 
