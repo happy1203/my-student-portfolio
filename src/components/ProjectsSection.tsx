@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectModal from "@/components/ProjectModal";
@@ -66,6 +67,18 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
+      title: "Peloton Case Competition - First Place",
+      description: "Developed winning go-to-market strategy for Peloton bikes, securing first place in class competition.",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
+      tags: ["Go-to-Market", "Strategy", "Consulting"],
+      links: [
+        { label: "View Presentation", url: "https://docs.google.com/presentation/d/16OYOaRAg8thz18kFe4hMrEhiOWyHEtnk9bgTC07V65A/edit?usp=sharing" },
+        { label: "Peloton Website", url: "https://www.onepeloton.com/en-CA" }
+      ],
+      details: "Led team to first place in a competitive case study focused on Peloton bikes. Developed comprehensive go-to-market strategy, conducted market analysis, and presented strategic recommendations. Demonstrated expertise in business strategy, market research, and consulting methodologies."
+    },
+    {
+      id: 6,
       title: "TripTok",
       description: "Designing mobile app in Figma to organize saved TikTok content for easy reference and sharing, focused on traveling.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
