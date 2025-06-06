@@ -20,7 +20,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-auto object-contain rounded-lg max-h-96"
             />
           </div>
           
