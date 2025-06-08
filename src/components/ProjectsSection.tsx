@@ -26,6 +26,7 @@ const ProjectsSection = () => {
       links: [
         { label: "View Figma Designs", url: "https://www.figma.com/design/Z04gFPGFCo41q4pqMQdqp1/Platform-Design?node-id=429-764&p=f" },
         { label: "Product Documentation", url: "https://drive.google.com/file/d/1oshENU4IQbqJP35nemSTfH4bjg9e43wq/view?usp=sharing" },
+        { label: "User Journeys", url: "https://drive.google.com/file/d/1Z5CiX-f4CjcxL5JDj6PdXpe-p0F_mkKM/view?usp=sharing" },
         { label: "OMHS Website", url: "https://omhs.ca/" }
       ],
       details: "Led end-to-end delivery of mobile and tablet designs in Figma, achieving 100% of roadmap milestones in 8 months. Defined PRDs for all features, incorporating client input and technical feasibility to reduce developer rework by 80%. Managed cross-functional team to deliver a comprehensive volunteer and pet management system."
@@ -37,7 +38,7 @@ const ProjectsSection = () => {
       image: "/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png",
       tags: ["Award Winner", "Conference", "Innovation"],
       links: [
-        { label: "View Report", url: "#" },
+        { label: "View Report", url: "https://drive.google.com/file/d/1thRd1nC361Tr02hEGFIVzW4ZCdAe_Mdy/view?usp=sharing" },
         { label: "View Poster Board", url: "/lovable-uploads/d3e8e273-c5b4-4fa7-8711-d43046b02ee3.png" }
       ],
       details: "Led a team to victory at the World of Opportunities Conference, earning the prestigious People's Choice Award. The project showcased innovative thinking and practical solutions that resonated with both judges and audience members. Demonstrated strong presentation skills and collaborative leadership."
@@ -50,14 +51,14 @@ const ProjectsSection = () => {
       tags: ["Full-Stack", "React", "Node.js", "MySQL"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/16TUWWjzO2dEHUmCQKQAespMlKH_rXQQPzgtv2K9c6DQ/edit?usp=sharing" },
-        { label: "ER Diagram", url: "#" },
+        { label: "ER Diagram", url: "https://drive.google.com/file/d/1QUBF3n9SAwA4og0AO-j7OPLhV6AnjuWk/view?usp=sharing" },
         { label: "GitHub Repository", url: "https://github.com/happy1203/city-seeker" }
       ],
       details: "Built a comprehensive travel planning platform using modern web technologies. The application helps users discover new destinations and plan their trips with an intuitive interface. Implemented full-stack architecture with React frontend, Node.js backend, and MySQL database for optimal performance and user experience."
     },
     {
       id: 4,
-      title: "ICE Competition - Blendtek Inc",
+      title: "ICE Case Competition - Blendtek Inc",
       description: "Developed innovative solution for Blendtek Inc as part of the Innovation, Creativity & Entrepreneurship competition.",
       image: "/lovable-uploads/8f14e05c-7d75-4ba2-b02d-6e6640f17001.png",
       tags: ["Innovation", "Entrepreneurship", "Strategy"],
