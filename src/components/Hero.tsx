@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Text content */}
-          <div className="space-y-8 order-2 lg:order-1">
+          <div className="space-y-8">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                 Hey! My name is{" "}
@@ -79,8 +79,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Large profile image as first focal point */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          {/* Right side - Large profile image */}
+          <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Background decoration */}
               <div className="absolute -inset-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-2xl opacity-20 animate-pulse"></div>
