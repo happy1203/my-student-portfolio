@@ -25,6 +25,7 @@ const ProjectsSection = () => {
       tags: ["Product Management", "Figma", "Mobile Design"],
       links: [
         { label: "View Figma Designs", url: "https://www.figma.com/design/Z04gFPGFCo41q4pqMQdqp1/Platform-Design?node-id=429-764&p=f" },
+        { label: "Product Documentation", url: "https://drive.google.com/file/d/1oshENU4IQbqJP35nemSTfH4bjg9e43wq/view?usp=sharing" },
         { label: "OMHS Website", url: "https://omhs.ca/" }
       ],
       details: "Led end-to-end delivery of mobile and tablet designs in Figma, achieving 100% of roadmap milestones in 8 months. Defined PRDs for all features, incorporating client input and technical feasibility to reduce developer rework by 80%. Managed cross-functional team to deliver a comprehensive volunteer and pet management system."
@@ -45,10 +46,11 @@ const ProjectsSection = () => {
       id: 3,
       title: "City-View",
       description: "Developed full-stack app with React, Node.js, and MySQL to help users discover and plan new travel destinations.",
-      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/816a76a8-4aea-45d2-92cb-16d622c99ba2.png",
       tags: ["Full-Stack", "React", "Node.js", "MySQL"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/16TUWWjzO2dEHUmCQKQAespMlKH_rXQQPzgtv2K9c6DQ/edit?usp=sharing" },
+        { label: "ER Diagram", url: "#" },
         { label: "GitHub Repository", url: "https://github.com/happy1203/city-seeker" }
       ],
       details: "Built a comprehensive travel planning platform using modern web technologies. The application helps users discover new destinations and plan their trips with an intuitive interface. Implemented full-stack architecture with React frontend, Node.js backend, and MySQL database for optimal performance and user experience."
@@ -57,10 +59,11 @@ const ProjectsSection = () => {
       id: 4,
       title: "ICE Competition - Blendtek Inc",
       description: "Developed innovative solution for Blendtek Inc as part of the Innovation, Creativity & Entrepreneurship competition.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/8f14e05c-7d75-4ba2-b02d-6e6640f17001.png",
       tags: ["Innovation", "Entrepreneurship", "Strategy"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/1JtHoFsQQbyjdWb1gvoxuMIbSslqTggfSU5zYBjlLsVI/edit?usp=sharing" },
+        { label: "Business Report", url: "https://docs.google.com/document/d/1Yx0ZgBUAYF3W3CDJAcuPd_Hw0uV0_ewip4gwb8YA5Ww/edit?usp=sharing" },
         { label: "Blendtek Website", url: "https://www.blendtek.com/" }
       ],
       details: "Participated in the Innovation, Creativity & Entrepreneurship competition, developing a comprehensive solution for Blendtek Inc. The project involved analyzing market opportunities, developing innovative strategies, and presenting actionable recommendations to industry professionals."
@@ -69,10 +72,11 @@ const ProjectsSection = () => {
       id: 5,
       title: "Peloton Case Competition - First Place",
       description: "Developed winning go-to-market strategy for Peloton bikes, securing first place in class competition.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/fc2782f2-6cc5-449b-98ac-e0c51e875533.png",
       tags: ["Go-to-Market", "Strategy", "Consulting"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/16OYOaRAg8thz18kFe4hMrEhiOWyHEtnk9bgTC07V65A/edit?usp=sharing" },
+        { label: "Business Report", url: "https://docs.google.com/document/d/1H06Z8Ym7XRXmRlV9G9VtAEki9Lpxf1zNKu02qBnVS2A/edit?usp=sharing" },
         { label: "Peloton Website", url: "https://www.onepeloton.com/en-CA" }
       ],
       details: "Led team to first place in a competitive case study focused on Peloton bikes. Developed comprehensive go-to-market strategy, conducted market analysis, and presented strategic recommendations. Demonstrated expertise in business strategy, market research, and consulting methodologies."
