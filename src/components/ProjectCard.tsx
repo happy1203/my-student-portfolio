@@ -16,31 +16,52 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
     >
       <CardContent className="p-6 flex flex-col h-full">
         <div className="space-y-4 flex-grow">
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <Badge 
-                key={tag} 
-                variant="secondary" 
-                className="bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors duration-200 text-xs"
-              >
-                {tag}
-              </Badge>
-            ))}
+          {/* Header with title, role, year, and tech stack */}
+          <div className="space-y-2">
+            <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
+              {project.title}
+            </h3>
+            <p className="text-sm text-gray-600 font-medium">
+              {project.role} · {project.year} · {project.techStack}
+            </p>
           </div>
-          
-          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
-            {project.title}
-          </h3>
-          
-          <p className="text-gray-600 leading-relaxed text-sm line-clamp-3">
-            {project.description}
-          </p>
-        </div>
-        
-        <div className="pt-4 mt-auto">
-          <span className="text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-200 text-sm">
-            Learn more →
-          </span>
+
+          {/* Summary */}
+          <div>
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">Summary</h4>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {project.summary}
+            </p>
+          </div>
+
+          {/* Key Contributions */}
+          <div>
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Contributions</h4>
+            <ul className="text-sm text-gray-600 space-y-1">
+              {project.keyContributions.map((contribution, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-blue-600 mr-2 mt-1.5 text-xs">•</span>
+                  <span className="leading-relaxed">{contribution}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Impact */}
+          <div>
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">Impact</h4>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {project.impact}
+            </p>
+          </div>
+
+          {/* Skills & Tools */}
+          <div>
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">Skills & Tools</h4>
+            <p className="text-sm text-gray-600">
+              {project.skillsTools}
+            </p>
+          </div>
         </div>
       </CardContent>
     </Card>
