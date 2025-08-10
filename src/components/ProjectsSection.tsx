@@ -38,7 +38,7 @@ const ProjectsSection = () => {
       ],
       impact: "Increased volunteer task visibility and reduced coordination time for staff. Recognized as a featured UW Blueprint project.",
       skillsTools: "Product Management · Agile · Figma · React · Node.js · MySQL",
-      description: "Spearheaded team of 8 developers and 4 designers to develop a volunteer and pet management system for OMHS.",
+      description: "Led cross-functional team to create a role-based platform for volunteers and pet care tracking.",
       image: "/lovable-uploads/13012312-d5d0-4780-b023-35f07961c4d8.png",
       tags: ["Product Management", "Figma", "Mobile Design"],
       links: [
@@ -63,7 +63,7 @@ const ProjectsSection = () => {
       ],
       impact: "Voted top presentation out of 20+ participants.",
       skillsTools: "Market Research · Go-to-Market Strategy · Public Speaking · Pitch Design",
-      description: "Won People's Choice Award at the World of Opportunities Conference for innovative project presentation.",
+      description: "Presented winning market expansion strategy for a fintech company in Japan.",
       image: "/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png",
       tags: ["Award Winner", "Conference", "Innovation"],
       links: [
@@ -86,7 +86,7 @@ const ProjectsSection = () => {
       ],
       impact: "Created a scalable platform architecture supporting dynamic city data and user-generated content.",
       skillsTools: "React · Node.js · MySQL · Next.js · SQL Schema Design",
-      description: "Developed full-stack app with React, Node.js, and MySQL to help users discover and plan new travel destinations.",
+      description: "Built a web app for discovering destinations, favoriting locations, and trip planning.",
       image: "/lovable-uploads/816a76a8-4aea-45d2-92cb-16d622c99ba2.png",
       tags: ["Full-Stack", "React", "Node.js", "MySQL"],
       links: [
@@ -110,7 +110,7 @@ const ProjectsSection = () => {
       ],
       impact: "Provided a clear organizational workflow for travel content discovery and planning.",
       skillsTools: "Product Design · Figma · Mobile UX",
-      description: "Designing mobile app in Figma to organize saved TikTok content for easy reference and sharing, focused on traveling.",
+      description: "Designed mobile app to organize saved TikTok travel content for easy reference.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
       tags: ["Product Design", "Mobile App", "Figma"],
       links: [
@@ -132,7 +132,7 @@ const ProjectsSection = () => {
       ],
       impact: "Praised for creativity and feasibility of the solution.",
       skillsTools: "Market Research · Business Strategy · Pitching",
-      description: "Developed innovative solution for Blendtek Inc as part of the Innovation, Creativity & Entrepreneurship competition.",
+      description: "Developed creative market strategy for food industry company in innovation competition.",
       image: "/lovable-uploads/8f14e05c-7d75-4ba2-b02d-6e6640f17001.png",
       tags: ["Innovation", "Entrepreneurship", "Strategy"],
       links: [
@@ -156,7 +156,7 @@ const ProjectsSection = () => {
       ],
       impact: "First-place finish out of multiple competing teams.",
       skillsTools: "Go-to-Market Strategy · Competitive Analysis · Presentation Design",
-      description: "Developed winning go-to-market strategy for Peloton bikes, securing first place in class competition.",
+      description: "Led winning go-to-market plan for Peloton bikes, securing first place.",
       image: "/lovable-uploads/fc2782f2-6cc5-449b-98ac-e0c51e875533.png",
       tags: ["Go-to-Market", "Strategy", "Consulting"],
       links: [
