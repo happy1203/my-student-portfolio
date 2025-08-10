@@ -41,16 +41,42 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
               {project.title}
             </DialogTitle>
             
-            <DialogDescription className="text-lg text-gray-600">
-              {project.description}
-            </DialogDescription>
+            <p className="text-lg text-gray-600 font-medium">
+              {project.role} · {project.year} · {project.techStack}
+            </p>
           </div>
         </DialogHeader>
         
         <div className="space-y-6">
+          {/* Summary */}
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-3">Project Details</h4>
-            <p className="text-gray-700 leading-relaxed">{project.details}</p>
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Summary</h4>
+            <p className="text-gray-700 leading-relaxed">{project.summary}</p>
+          </div>
+
+          {/* Key Contributions */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Key Contributions</h4>
+            <ul className="space-y-2">
+              {project.keyContributions.map((contribution, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-blue-600 mr-3 mt-1 text-lg">•</span>
+                  <span className="text-gray-700 leading-relaxed">{contribution}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Impact */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact</h4>
+            <p className="text-gray-700 leading-relaxed">{project.impact}</p>
+          </div>
+
+          {/* Skills & Tools */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Skills & Tools</h4>
+            <p className="text-gray-700 leading-relaxed">{project.skillsTools}</p>
           </div>
           
           {project.links.length > 0 && (
