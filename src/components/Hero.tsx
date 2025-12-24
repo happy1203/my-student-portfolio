@@ -51,7 +51,7 @@ const Hero = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Recent Experience</h3>
                     <p className="text-xs text-gray-600">
-                      Product Manager Intern at Interac Corporation
+                      Technical Analyst Intern at Dayforce
                     </p>
                   </div>
                 </CardContent>
