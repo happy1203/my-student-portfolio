@@ -1,6 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import profilePhoto from "@/assets/profile-photo.jpg";
 import { ArrowDown, GraduationCap, Briefcase, FileText } from "lucide-react";
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                 Hey! My name is{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-pink-500 to-amber-500 bg-clip-text text-transparent">
                   Happy Patel.
                 </span>
               </h1>
@@ -33,9 +33,9 @@ const Hero = () => {
 
             {/* Cards Section */}
             <div className="grid gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <Card className="border-0 shadow-lg bg-gradient-to-r from-blue-50 to-blue-100">
+              <Card className="border-0 shadow-lg bg-gradient-to-r from-pink-50 to-pink-100">
                 <CardContent className="p-4 flex items-center space-x-4">
-                  <GraduationCap className="h-6 w-6 text-blue-600 flex-shrink-0" />
+                  <GraduationCap className="h-6 w-6 text-pink-500 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Education</h3>
                     <p className="text-xs text-gray-600">
@@ -45,9 +45,9 @@ const Hero = () => {
                 </CardContent>
               </Card>
               
-              <Card className="border-0 shadow-lg bg-gradient-to-r from-purple-50 to-purple-100">
+              <Card className="border-0 shadow-lg bg-gradient-to-r from-amber-50 to-amber-100">
                 <CardContent className="p-4 flex items-center space-x-4">
-                  <Briefcase className="h-6 w-6 text-purple-600 flex-shrink-0" />
+                  <Briefcase className="h-6 w-6 text-amber-500 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Recent Experience</h3>
                     <p className="text-xs text-gray-600">
@@ -63,7 +63,7 @@ const Hero = () => {
               <Button 
                 onClick={scrollToExperience}
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r from-pink-500 to-amber-500 hover:from-pink-600 hover:to-amber-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 View My Work Experience
                 <ArrowDown className="ml-2 h-4 w-4" />
@@ -73,7 +73,7 @@ const Hero = () => {
                 onClick={scrollToProjects}
                 variant="outline"
                 size="lg" 
-                className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+                className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-pink-500 hover:text-pink-500 transition-all duration-300"
               >
                 View My Projects
                 <ArrowDown className="ml-2 h-4 w-4" />
@@ -83,7 +83,7 @@ const Hero = () => {
                 asChild
                 variant="outline"
                 size="lg" 
-                className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+                className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-pink-500 hover:text-pink-500 transition-all duration-300"
               >
                 <a href="https://drive.google.com/file/d/1m_iVHiFcvwguSEJ0OS-N9o8Z0QzwcLtl/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-4 w-4" />
@@ -97,18 +97,18 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Background decoration */}
-              <div className="absolute -inset-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+              <div className="absolute -inset-6 bg-gradient-to-r from-pink-400 to-amber-400 rounded-full blur-2xl opacity-20 animate-pulse"></div>
               
               {/* Main profile image - significantly larger */}
               <div className="relative w-96 h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem]">
                 <img
-                  src="/lovable-uploads/e4b2fa6a-595d-4d81-82da-71020fdadd32.png"
+                  src={profilePhoto}
                   alt="Happy Patel Profile"
                   className="w-full h-full object-cover rounded-full shadow-2xl ring-8 ring-white transform hover:scale-105 transition-transform duration-300"
                 />
                 
                 {/* Floating accent */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-bounce"></div>
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-pink-500 to-amber-500 rounded-full animate-bounce"></div>
               </div>
             </div>
           </div>
