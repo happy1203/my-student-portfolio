@@ -17,7 +17,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
       <CardContent className="p-6 flex flex-col h-full">
         <div className="space-y-4 flex-grow">
           {/* Project Title */}
-          <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
+          <h3 className="text-xl font-bold text-gray-900 group-hover:text-pink-500 transition-colors duration-200 line-clamp-2">
             {project.title}
           </h3>
           
@@ -32,7 +32,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
               <Badge 
                 key={tag} 
                 variant="secondary" 
-                className="bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors duration-200 text-xs"
+                className="bg-pink-100 text-pink-700 hover:bg-pink-200 transition-colors duration-200 text-xs"
               >
                 {tag}
               </Badge>
@@ -41,7 +41,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
         </div>
         
         <div className="pt-4 mt-auto">
-          <span className="text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-200 text-sm">
+          <span className="text-pink-500 font-medium group-hover:text-pink-600 transition-colors duration-200 text-sm">
             Learn more →
           </span>
         </div>

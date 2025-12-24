@@ -30,7 +30,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 <Badge 
                   key={tag} 
                   variant="secondary" 
-                  className="bg-blue-100 text-blue-700"
+                  className="bg-pink-100 text-pink-700"
                 >
                   {tag}
                 </Badge>
@@ -60,7 +60,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             <ul className="space-y-2">
               {project.keyContributions.map((contribution, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1 text-lg">•</span>
+                  <span className="text-pink-500 mr-3 mt-1 text-lg">•</span>
                   <span className="text-gray-700 leading-relaxed">{contribution}</span>
                 </li>
               ))}
@@ -87,7 +87,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                   <Button 
                     key={index}
                     asChild 
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                    className="bg-gradient-to-r from-pink-500 to-amber-500 hover:from-pink-600 hover:to-amber-600"
                   >
                     <a href={link.url} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
