@@ -11,11 +11,11 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
-  { year: "2023", company: "Magnet Forensics", role: "SWE Intern", logo: magnetLogo },
-  { year: "2024", company: "Interac", role: "PM Intern", logo: interacLogo },
+  { year: "2023", company: "Magnet Forensics", role: "Software Development Intern", logo: magnetLogo },
+  { year: "2024", company: "Interac", role: "Product Management Intern", logo: interacLogo },
   { year: "2024", company: "OMHS", role: "Product Manager", logo: omhsLogo },
-  { year: "2025", company: "Interac", role: "Technical PM Intern", logo: interacLogo },
-  { year: "2026", company: "Dayforce", role: "Technical Analyst", logo: dayforceLogo },
+  { year: "2025", company: "Interac", role: "Technical Product Management Intern", logo: interacLogo },
+  { year: "2026", company: "Dayforce", role: "Technical Analyst Intern", logo: dayforceLogo },
 ];
 
 const WorkExperience = () => {
