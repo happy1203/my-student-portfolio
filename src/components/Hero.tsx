@@ -8,6 +8,10 @@ const Hero = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToExperience = () => {
+    document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 py-12">
       <div className="max-w-7xl mx-auto w-full">
@@ -57,9 +61,19 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <Button 
-                onClick={scrollToProjects}
+                onClick={scrollToExperience}
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                View My Work Experience
+                <ArrowDown className="ml-2 h-4 w-4" />
+              </Button>
+
+              <Button 
+                onClick={scrollToProjects}
+                variant="outline"
+                size="lg" 
+                className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
               >
                 View My Projects
                 <ArrowDown className="ml-2 h-4 w-4" />
@@ -71,7 +85,7 @@ const Hero = () => {
                 size="lg" 
                 className="px-8 py-3 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
               >
-                <a href="lovable-uploads/Happy-Patel-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1m_iVHiFcvwguSEJ0OS-N9o8Z0QzwcLtl/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-4 w-4" />
                   View Resume
                 </a>
