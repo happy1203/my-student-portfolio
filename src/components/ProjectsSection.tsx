@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectModal from "@/components/ProjectModal";
@@ -6,6 +5,7 @@ import ProjectModal from "@/components/ProjectModal";
 export interface Project {
   id: number;
   title: string;
+  shortTitle?: string;
   role: string;
   year: string;
   techStack: string;
@@ -27,6 +27,7 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "Oakville & Milton Humane Society – Volunteer & Pet Management System",
+      shortTitle: "omhs volunteer system",
       role: "Product Manager",
       year: "2023",
       techStack: "Figma, React, Node.js, MySQL",
@@ -38,9 +39,9 @@ const ProjectsSection = () => {
       ],
       impact: "Increased volunteer task visibility and reduced coordination time for staff. Recognized as a featured UW Blueprint project.",
       skillsTools: "Product Management · Agile · Figma · React · Node.js · MySQL",
-      description: "Led cross-functional team to create a role-based platform for volunteers and pet care tracking.",
+      description: "led cross-functional team to create a role-based platform for volunteers and pet care tracking.",
       image: "/lovable-uploads/13012312-d5d0-4780-b023-35f07961c4d8.png",
-      tags: ["Product Management", "Figma", "Mobile Design"],
+      tags: ["product management", "figma", "mobile design"],
       links: [
         { label: "View Figma Designs", url: "https://www.figma.com/design/Z04gFPGFCo41q4pqMQdqp1/Platform-Design?node-id=429-764&p=f" },
         { label: "Product Documentation", url: "https://drive.google.com/file/d/1oshENU4IQbqJP35nemSTfH4bjg9e43wq/view?usp=sharing" },
@@ -52,6 +53,7 @@ const ProjectsSection = () => {
     {
       id: 2,
       title: "World of Opportunities Conference – Fintech in Japan",
+      shortTitle: "fintech japan",
       role: "Presenter",
       year: "2024",
       techStack: "Market Entry Strategy, Public Speaking",
@@ -63,9 +65,9 @@ const ProjectsSection = () => {
       ],
       impact: "Voted top presentation out of 20+ participants.",
       skillsTools: "Market Research · Go-to-Market Strategy · Public Speaking · Pitch Design",
-      description: "Presented winning market expansion strategy for a fintech company in Japan.",
+      description: "presented winning market expansion strategy for a fintech company in japan.",
       image: "/lovable-uploads/df800c04-0c7e-4ca6-8545-64c148aa7648.png",
-      tags: ["Award Winner", "Conference", "Innovation"],
+      tags: ["award winner", "conference", "innovation"],
       links: [
         { label: "View Report", url: "https://drive.google.com/file/d/1thRd1nC361Tr02hEGFIVzW4ZCdAe_Mdy/view?usp=sharing" },
         { label: "View Poster Board", url: "/lovable-uploads/d3e8e273-c5b4-4fa7-8711-d43046b02ee3.png" }
@@ -75,6 +77,7 @@ const ProjectsSection = () => {
     {
       id: 3,
       title: "CityView – Travel Discovery & Planning App",
+      shortTitle: "cityview",
       role: "Full-Stack Developer",
       year: "2023",
       techStack: "React, Node.js, MySQL",
@@ -86,9 +89,9 @@ const ProjectsSection = () => {
       ],
       impact: "Created a scalable platform architecture supporting dynamic city data and user-generated content.",
       skillsTools: "React · Node.js · MySQL · Next.js · SQL Schema Design",
-      description: "Built a web app for discovering destinations, favoriting locations, and trip planning.",
+      description: "built a web app for discovering destinations, favoriting locations, and trip planning.",
       image: "/lovable-uploads/816a76a8-4aea-45d2-92cb-16d622c99ba2.png",
-      tags: ["Full-Stack", "React", "Node.js", "MySQL"],
+      tags: ["full-stack", "react", "node.js", "mysql"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/16TUWWjzO2dEHUmCQKQAespMlKH_rXQQPzgtv2K9c6DQ/edit?usp=sharing" },
         { label: "ER Diagram", url: "https://drive.google.com/file/d/1QUBF3n9SAwA4og0AO-j7OPLhV6AnjuWk/view?usp=sharing" },
@@ -99,6 +102,7 @@ const ProjectsSection = () => {
     {
       id: 4,
       title: "TripTok – TikTok Travel Content Organizer",
+      shortTitle: "triptok",
       role: "Product Designer",
       year: "2024",
       techStack: "Figma, Mobile UX Design",
@@ -110,9 +114,9 @@ const ProjectsSection = () => {
       ],
       impact: "Provided a clear organizational workflow for travel content discovery and planning.",
       skillsTools: "Product Design · Figma · Mobile UX",
-      description: "Designed mobile app to organize saved TikTok travel content for easy reference.",
+      description: "designed mobile app to organize saved tiktok travel content for easy reference.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      tags: ["Product Design", "Mobile App", "Figma"],
+      tags: ["product design", "mobile app", "figma"],
       links: [
         { label: "Prototype", url: "https://www.figma.com/proto/dBQINUm8mOEK2pRGNua5KF/Travelly?node-id=2-538&starting-point-node-id=2%3A538&t=7OIjOIaBudWzbxF5-1" }
       ],
@@ -121,6 +125,7 @@ const ProjectsSection = () => {
     {
       id: 5,
       title: "ICE Case Competition – Blendtek Inc.",
+      shortTitle: "ice competition",
       role: "Team Strategist",
       year: "2023",
       techStack: "Innovation, Market Analysis",
@@ -132,9 +137,9 @@ const ProjectsSection = () => {
       ],
       impact: "Praised for creativity and feasibility of the solution.",
       skillsTools: "Market Research · Business Strategy · Pitching",
-      description: "Developed creative market strategy for food industry company in innovation competition.",
+      description: "developed creative market strategy for food industry company in innovation competition.",
       image: "/lovable-uploads/8f14e05c-7d75-4ba2-b02d-6e6640f17001.png",
-      tags: ["Innovation", "Entrepreneurship", "Strategy"],
+      tags: ["innovation", "entrepreneurship", "strategy"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/1JtHoFsQQbyjdWb1gvoxuMIbSslqTggfSU5zYBjlLsVI/edit?usp=sharing" },
         { label: "Business Report", url: "https://docs.google.com/document/d/1Yx0ZgBUAYF3W3CDJAcuPd_Hw0uV0_ewip4gwb8YA5Ww/edit?usp=sharing" },
@@ -145,6 +150,7 @@ const ProjectsSection = () => {
     {
       id: 6,
       title: "Peloton Case Competition – Go-to-Market Strategy",
+      shortTitle: "peloton strategy",
       role: "Team Lead",
       year: "2023",
       techStack: "Strategy, Consulting",
@@ -156,9 +162,9 @@ const ProjectsSection = () => {
       ],
       impact: "First-place finish out of multiple competing teams.",
       skillsTools: "Go-to-Market Strategy · Competitive Analysis · Presentation Design",
-      description: "Led winning go-to-market plan for Peloton bikes, securing first place.",
+      description: "led winning go-to-market plan for peloton bikes, securing first place.",
       image: "/lovable-uploads/fc2782f2-6cc5-449b-98ac-e0c51e875533.png",
-      tags: ["Go-to-Market", "Strategy", "Consulting"],
+      tags: ["go-to-market", "strategy", "consulting"],
       links: [
         { label: "View Presentation", url: "https://docs.google.com/presentation/d/16OYOaRAg8thz18kFe4hMrEhiOWyHEtnk9bgTC07V65A/edit?usp=sharing" },
         { label: "Business Report", url: "https://docs.google.com/document/d/1H06Z8Ym7XRXmRlV9G9VtAEki9Lpxf1zNKu02qBnVS2A/edit?usp=sharing" },
@@ -169,14 +175,14 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 lg:px-8 bg-white">
+    <section id="projects" className="py-20 px-6 lg:px-8 bg-slate-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Featured Projects
+          <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4 lowercase">
+            featured projects
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A showcase of my work in product management, development, and strategic consulting 
+          <p className="text-lg text-slate-500 max-w-2xl mx-auto lowercase">
+            a showcase of my work in product management, development, and strategic consulting 
             across various industries and technologies.
           </p>
         </div>
