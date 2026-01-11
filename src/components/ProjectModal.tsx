@@ -1,5 +1,4 @@
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { Project } from "@/components/ProjectsSection";
@@ -13,54 +12,53 @@ interface ProjectModalProps {
 const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto font-sans">
         <DialogHeader className="space-y-4">
           <div className="relative">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-auto object-contain rounded-lg max-h-96"
+              className="w-full h-auto object-contain rounded-lg max-h-80"
             />
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3">
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
-                <Badge 
+                <span 
                   key={tag} 
-                  variant="secondary" 
-                  className="bg-blue-50 text-blue-600 lowercase"
+                  className="text-xs text-slate-400"
                 >
                   {tag}
-                </Badge>
+                </span>
               ))}
             </div>
             
-            <DialogTitle className="text-2xl font-bold text-slate-800 lowercase">
-              {project.title}
+            <DialogTitle className="text-xl font-medium text-slate-800">
+              {project.title.toLowerCase()}
             </DialogTitle>
             
-            <p className="text-lg text-slate-500 font-medium lowercase">
-              {project.role} · {project.year} · {project.techStack}
+            <p className="text-sm text-slate-500">
+              {project.role.toLowerCase()} · {project.year} · {project.techStack.toLowerCase()}
             </p>
           </div>
         </DialogHeader>
         
-        <div className="space-y-6">
+        <div className="space-y-6 mt-4">
           {/* Summary */}
           <div>
-            <h4 className="text-lg font-semibold text-slate-800 mb-3 lowercase">summary</h4>
-            <p className="text-slate-600 leading-relaxed">{project.summary}</p>
+            <h4 className="text-sm font-medium text-slate-800 mb-2">summary</h4>
+            <p className="text-sm text-slate-600 leading-relaxed">{project.summary}</p>
           </div>
 
           {/* Key Contributions */}
           <div>
-            <h4 className="text-lg font-semibold text-slate-800 mb-3 lowercase">key contributions</h4>
+            <h4 className="text-sm font-medium text-slate-800 mb-2">key contributions</h4>
             <ul className="space-y-2">
               {project.keyContributions.map((contribution, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-blue-500 mr-3 mt-1 text-lg">•</span>
-                  <span className="text-slate-600 leading-relaxed">{contribution}</span>
+                  <span className="text-slate-400 mr-2">•</span>
+                  <span className="text-sm text-slate-600 leading-relaxed">{contribution}</span>
                 </li>
               ))}
             </ul>
@@ -68,28 +66,30 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
 
           {/* Impact */}
           <div>
-            <h4 className="text-lg font-semibold text-slate-800 mb-3 lowercase">impact</h4>
-            <p className="text-slate-600 leading-relaxed">{project.impact}</p>
+            <h4 className="text-sm font-medium text-slate-800 mb-2">impact</h4>
+            <p className="text-sm text-slate-600 leading-relaxed">{project.impact}</p>
           </div>
 
           {/* Skills & Tools */}
           <div>
-            <h4 className="text-lg font-semibold text-slate-800 mb-3 lowercase">skills & tools</h4>
-            <p className="text-slate-600 leading-relaxed">{project.skillsTools}</p>
+            <h4 className="text-sm font-medium text-slate-800 mb-2">skills & tools</h4>
+            <p className="text-sm text-slate-600 leading-relaxed">{project.skillsTools}</p>
           </div>
           
           {project.links.length > 0 && (
             <div className="space-y-3">
-              <h4 className="text-lg font-semibold text-slate-800 lowercase">links</h4>
-              <div className="flex flex-wrap gap-3">
+              <h4 className="text-sm font-medium text-slate-800">links</h4>
+              <div className="flex flex-wrap gap-2">
                 {project.links.map((link, index) => (
                   <Button 
                     key={index}
                     asChild 
-                    className="bg-blue-600 hover:bg-blue-700 lowercase"
+                    variant="outline"
+                    size="sm"
+                    className="text-xs border-slate-200 hover:border-slate-400 text-slate-600"
                   >
                     <a href={link.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
+                      <ExternalLink className="mr-1.5 h-3 w-3" />
                       {link.label}
                     </a>
                   </Button>

@@ -175,19 +175,11 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 lg:px-8 bg-slate-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4 lowercase">
-            featured projects
-          </h2>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto lowercase">
-            a showcase of my work in product management, development, and strategic consulting 
-            across various industries and technologies.
-          </p>
-        </div>
+    <section id="projects" className="py-20 px-6 lg:px-8 bg-white">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl font-serif text-slate-800 mb-12">projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

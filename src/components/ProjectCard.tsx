@@ -1,5 +1,4 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Project } from "@/components/ProjectsSection";
 
 interface ProjectCardProps {
@@ -10,11 +9,11 @@ interface ProjectCardProps {
 const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
   return (
     <Card 
-      className="group cursor-pointer overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white h-full"
+      className="group cursor-pointer overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white"
       onClick={onClick}
     >
       {/* Project Image */}
-      <div className="aspect-video overflow-hidden bg-slate-100">
+      <div className="aspect-[16/10] overflow-hidden bg-slate-100">
         <img 
           src={project.image} 
           alt={project.title}
@@ -22,38 +21,29 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
         />
       </div>
       
-      <CardContent className="p-5 flex flex-col">
-        <div className="space-y-3 flex-grow">
-          {/* Project Title - Short version */}
-          <h3 className="text-lg font-semibold text-slate-800 group-hover:text-blue-600 transition-colors duration-200 lowercase line-clamp-1">
-            {project.shortTitle || project.title.split('–')[0].trim()}
-          </h3>
-          
-          {/* Short Description */}
-          <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 lowercase">
-            {project.description}
-          </p>
-
-          {/* Skills & Tools Tags */}
-          <div className="flex flex-wrap gap-1.5 mt-3">
-            {project.tags.slice(0, 3).map((tag) => (
-              <Badge 
-                key={tag} 
-                variant="secondary" 
-                className="bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors duration-200 text-xs font-normal lowercase"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </div>
+      <div className="p-5 font-sans">
+        {/* Project Title */}
+        <h3 className="text-base font-medium text-slate-800 group-hover:text-slate-600 transition-colors duration-200 mb-2">
+          {project.shortTitle || project.title.split('–')[0].trim()}
+        </h3>
         
-        <div className="pt-4 mt-auto">
-          <span className="text-blue-500 font-medium group-hover:text-blue-600 transition-colors duration-200 text-sm lowercase">
-            learn more →
-          </span>
+        {/* Short Description */}
+        <p className="text-sm text-slate-500 leading-relaxed line-clamp-2 mb-3">
+          {project.description}
+        </p>
+
+        {/* Tags as simple text */}
+        <div className="flex flex-wrap gap-2">
+          {project.tags.slice(0, 3).map((tag) => (
+            <span 
+              key={tag} 
+              className="text-xs text-slate-400"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
-      </CardContent>
+      </div>
     </Card>
   );
 };
