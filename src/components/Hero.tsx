@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import profileBitmoji from "@/assets/profile-bitmoji.png";
-import { ArrowDown, GraduationCap, Briefcase, FileText } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -13,59 +12,50 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 py-12 bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="min-h-screen flex items-center justify-center px-6 lg:px-8 py-12 bg-white">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-8">
-            <div className="space-y-6 animate-fade-in">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-800 leading-tight lowercase">
+            <div className="space-y-4">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl text-slate-800 leading-tight font-sans font-light">
                 hey! my name is{" "}
-                <span className="text-blue-600">
+                <span className="font-serif italic text-slate-900">
                   happy patel.
                 </span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-slate-500 max-w-lg lowercase">
-                welcome to my corner of the internet!
+              <p className="text-lg text-slate-500 font-sans font-light">
+                seeking summer 2026 internships
+              </p>
+              
+              <p className="text-xl text-slate-600 max-w-lg font-sans">
+                i build thoughtful products, used by real people at scale.
               </p>
             </div>
 
-            {/* Cards Section */}
-            <div className="grid gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <Card className="border border-blue-100 shadow-sm bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-4 flex items-center space-x-4">
-                  <GraduationCap className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-medium text-slate-800 text-sm lowercase">education</h3>
-                    <p className="text-xs text-slate-500 lowercase">
-                      bcs at university of waterloo & bba at wilfrid laurier university
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="border border-blue-100 shadow-sm bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-4 flex items-center space-x-4">
-                  <Briefcase className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-medium text-slate-800 text-sm lowercase">recent experience</h3>
-                    <p className="text-xs text-slate-500 lowercase">
-                      technical advisor intern at dayforce
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+            {/* Info cards */}
+            <div className="space-y-3 font-sans">
+              <div className="flex items-center gap-3 text-slate-600">
+                <span className="text-sm text-slate-400">education</span>
+                <span className="text-slate-300">·</span>
+                <span className="text-sm">bcs @ waterloo · bba @ laurier</span>
+              </div>
+              <div className="flex items-center gap-3 text-slate-600">
+                <span className="text-sm text-slate-400">recent</span>
+                <span className="text-slate-300">·</span>
+                <span className="text-sm">technical advisor intern @ dayforce</span>
+              </div>
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-wrap gap-4 font-sans">
               <Button 
                 onClick={scrollToExperience}
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 lowercase"
+                className="bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-lg text-sm font-normal"
               >
-                view my work experience
+                view experience
                 <ArrowDown className="ml-2 h-4 w-4" />
               </Button>
 
@@ -73,9 +63,9 @@ const Hero = () => {
                 onClick={scrollToProjects}
                 variant="outline"
                 size="lg" 
-                className="px-8 py-3 rounded-full border-2 border-slate-200 hover:border-blue-500 hover:text-blue-600 transition-all duration-300 lowercase"
+                className="px-6 py-3 rounded-lg border border-slate-200 hover:border-slate-400 text-slate-600 hover:text-slate-900 text-sm font-normal"
               >
-                view my projects
+                view projects
                 <ArrowDown className="ml-2 h-4 w-4" />
               </Button>
               
@@ -83,30 +73,24 @@ const Hero = () => {
                 asChild
                 variant="outline"
                 size="lg" 
-                className="px-8 py-3 rounded-full border-2 border-slate-200 hover:border-blue-500 hover:text-blue-600 transition-all duration-300 lowercase"
+                className="px-6 py-3 rounded-lg border border-slate-200 hover:border-slate-400 text-slate-600 hover:text-slate-900 text-sm font-normal"
               >
                 <a href="https://drive.google.com/file/d/1m_iVHiFcvwguSEJ0OS-N9o8Z0QzwcLtl/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-4 w-4" />
-                  view resume
+                  resume
                 </a>
               </Button>
             </div>
           </div>
 
-          {/* Right side - Large profile image */}
+          {/* Right side - Bitmoji (not circular) */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              {/* Background decoration */}
-              <div className="absolute -inset-6 bg-blue-200 rounded-full blur-2xl opacity-30"></div>
-              
-              {/* Main profile image - significantly larger */}
-              <div className="relative w-80 h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]">
-                <img
-                  src={profileBitmoji}
-                  alt="Happy Patel Bitmoji"
-                  className="w-full h-full object-contain rounded-full bg-white shadow-xl ring-4 ring-blue-100"
-                />
-              </div>
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]">
+              <img
+                src={profileBitmoji}
+                alt="Happy Patel"
+                className="w-full h-full object-contain drop-shadow-lg"
+              />
             </div>
           </div>
         </div>
