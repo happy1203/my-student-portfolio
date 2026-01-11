@@ -39,12 +39,12 @@ const Hero = () => {
               <div className="flex items-center gap-3 text-slate-600">
                 <span className="text-sm text-slate-400">education</span>
                 <span className="text-slate-300">·</span>
-                <span className="text-sm">bcs @ waterloo · bba @ laurier</span>
+                <span className="text-sm">BCS @ Waterloo · BBA @ Laurier</span>
               </div>
               <div className="flex items-center gap-3 text-slate-600">
                 <span className="text-sm text-slate-400">recent</span>
                 <span className="text-slate-300">·</span>
-                <span className="text-sm">technical advisor intern @ dayforce</span>
+                <span className="text-sm">Technical Advisor Intern @ Dayforce</span>
               </div>
             </div>
             
@@ -83,15 +83,13 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Bitmoji (not circular) */}
+          {/* Right side - Bitmoji only, enlarged */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]">
-              <img
-                src={profileBitmoji}
-                alt="Happy Patel"
-                className="w-full h-full object-contain drop-shadow-lg"
-              />
-            </div>
+            <img
+              src={profileBitmoji}
+              alt="Happy Patel"
+              className="w-72 h-72 lg:w-96 lg:h-96 xl:w-[26rem] xl:h-[26rem] object-contain"
+            />
           </div>
         </div>
       </div>
