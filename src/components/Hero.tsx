@@ -83,12 +83,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Bitmoji only, enlarged */}
+          {/* Right side - Large engaging bitmoji */}
           <div className="flex justify-center lg:justify-end">
             <img
               src={profileBitmoji}
               alt="Happy Patel"
-              className="w-72 h-72 lg:w-96 lg:h-96 xl:w-[26rem] xl:h-[26rem] object-contain"
+              className="w-80 h-80 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] object-contain hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
