@@ -15,38 +15,38 @@ interface Experience {
 const experiences: Experience[] = [
   { 
     period: "2026", 
-    company: "dayforce", 
-    role: "technical advisor intern", 
+    company: "Dayforce", 
+    role: "Technical Advisor Intern", 
     logo: dayforceLogo,
-    location: "toronto, on"
+    location: "Toronto, ON"
   },
   { 
     period: "2025", 
-    company: "interac", 
-    role: "technical product management intern", 
+    company: "Interac", 
+    role: "Technical Product Management Intern", 
     logo: interacLogo,
-    location: "toronto, on"
+    location: "Toronto, ON"
   },
   { 
     period: "2024", 
-    company: "omhs", 
-    role: "product manager", 
+    company: "OMHS", 
+    role: "Product Manager", 
     logo: omhsLogo,
-    location: "oakville, on"
+    location: "Oakville, ON"
   },
   { 
     period: "2024", 
-    company: "interac", 
-    role: "product management intern", 
+    company: "Interac", 
+    role: "Product Management Intern", 
     logo: interacLogo,
-    location: "toronto, on"
+    location: "Toronto, ON"
   },
   { 
     period: "2023", 
-    company: "magnet forensics", 
-    role: "software development intern", 
+    company: "Magnet Forensics", 
+    role: "Software Development Intern", 
     logo: magnetLogo,
-    location: "waterloo, on"
+    location: "Waterloo, ON"
   },
 ];
 
